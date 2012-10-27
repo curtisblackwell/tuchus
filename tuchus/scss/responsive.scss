@@ -1,0 +1,165 @@
+///////////////////////////////////////////////////////////////
+//
+//  RESPONSIVE GOODNESS
+//
+///////////////////////////////////////////////////////////////
+
+.iphone {display:none;} // hide all iphone specifics by default
+
+// Smaller screens - remove control bar icons
+@media only screen and (max-width: 865px) {
+
+  #control-bar {
+    min-width:0;
+    .icon {display:none;}
+    ul {width:100%;}
+    a {padding:12px 0 10px;}
+  }
+
+}
+
+// /* Small - Iphone + mobile devices */
+@media screen and (max-width: 480px) {
+
+  .web {display:none;}
+  .iphone, .hover {display:inline-block;}
+
+  #control-bar {
+    min-width:0;
+    .icon {display:block; margin:0; font-size:52px}
+    .title {display:none;}
+    ul {width:100%;}
+    a {padding:0 0 15px;}
+  }
+
+  #screen {padding:25px 10px;}
+
+  #status-bar {padding:0 10px;}
+
+  .btn {
+    width:100%;
+    padding:10px 0;
+    text-align:center;
+  }
+
+  #publish-title {padding:.5em 10px; font-size:24px;}
+
+  .table-list {
+    th {
+      font-size:16px;
+      padding:5px;
+    }
+    td {
+      font-size:12px;
+      padding:5px;
+      line-height:16px;
+      vertical-align: middle;
+    }
+    .title a {
+      font-size:16px;
+      line-height:16px;
+    }
+    .action {
+      padding:5px;
+      .icon {margin-right:0;}
+    }
+  }
+
+  .panel {
+    margin:0 0 50px;
+  }
+
+  #page-tree {
+    ul {
+      padding-left:25px;
+      background:url('../img/page-v-line.png') 25px 0 repeat-y;
+      .page-wrapper .page-title {
+        max-width: 135px;
+      }
+    }
+    .page-primary {
+      float:left;
+    }
+    .page-wrapper {
+      text-indent:0px;
+      .icon {margin-right:3px;}
+      .page-title {
+        display:inline-block;
+        float:left;
+        max-width: 160px;
+        max-height:30px;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        padding:0px 8px;
+      }
+      .control-entries {
+        margin-left:5px;
+        a {
+          color:$grey_dark;
+          font-size:15px;
+          &:hover {color:$red}
+        }
+        em {
+          color:lighten($grey_dark, 25%);
+          font-size:14px;
+        }
+      }
+      .slug-preview {display:none;}
+    }
+  }
+  #login {
+    background:$white_not_quite;
+    width:100%!important;
+    height:360px;
+    -webkit-text-size-adjust:none;
+    #login-wrapper {
+      background:none;
+      display: block;
+      min-height: 360px;
+      width:100%!important;
+      padding:0;
+      text-align:center;
+      img {
+        width:290px;
+        height: auto;
+      }
+      input {width:100%;}
+    }
+    #login-form {
+      @include border-radius(0px);
+      background:none;
+      border-top:12px solid $grey_dark;
+      box-shadow:none;
+      left:auto;
+      top:0;
+      margin:0;
+      padding:25px 0 0 0;
+      width:100%;
+      height:auto;
+      form {
+        margin-top:15px;
+        padding:15px;
+      }
+      .text {
+        background:$white;
+        border:1px solid $grey_light;
+        @include border-radius(0px);
+        color:$grey_dark;
+        font-family:sans-serif;
+        line-height:22px;
+        text-indent:10px;
+        padding:10px 0;
+        font-size:18px;
+        font-style: italic;
+        width:100%;
+      }
+      .login-row {
+        display:block;
+        margin-bottom:25px;
+        border:none;
+        width:100%;
+      }
+    }
+  }
+
+}
