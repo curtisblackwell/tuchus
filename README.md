@@ -1,5 +1,5 @@
 # Tuchus
-Tuchus is a client-friendly theme for Statamic's backend.
+Tuchus is a client-friendly theme for [Statamic's](http://statamic.com/) backend.
 
 The idea behind Tuchus was to take the default Trailhead theme and make it more client-friendly.
 
@@ -12,14 +12,14 @@ This is usable in its current state, but I'll probably make some more changes af
 
 ### Screenshots
 #### PC
-![Control Panel](https://raw.github.com/curtisblackwell/tuchus/raw/master/screenshots/control-panel.png)
+![Control Panel](https://raw.github.com/curtisblackwell/tuchus/master/screenshots/control-panel.png)
 
-![Login](https://raw.github.com/curtisblackwell/tuchus/raw/master/screenshots/login.png)
+![Login](https://raw.github.com/curtisblackwell/tuchus/master/screenshots/login.png)
 
 #### Mobile
-![Mobile Control Panel](https://raw.github.com/curtisblackwell/tuchus/raw/master/screenshots/mobile-control-panel.png)
+![Mobile Control Panel](https://raw.github.com/curtisblackwell/tuchus/master/screenshots/mobile-control-panel.png)
 
-![Mobile Login](https://raw.github.com/curtisblackwell/tuchus/raw/master/screenshots/mobile-login.png)
+![Mobile Login](https://raw.github.com/curtisblackwell/tuchus/master/screenshots/mobile-login.png)
 
 ## Installation
 1. Place `tuchus` in `_cp/themes`.
