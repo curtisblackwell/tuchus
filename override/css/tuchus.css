@@ -1,0 +1,407 @@
+body {
+  background: #eeeeee;
+  font-family: Helvetica, Arial, san-serif; }
+
+input, em, .btn {
+  font-family: Helvetica, Arial, san-serif;
+  font-style: italic; }
+
+textarea {
+  font-family: Helvetica, Arial, san-serif; }
+
+#login {
+  background: #cccccc; }
+  #login #login-wrapper {
+    background-image: -webkit-gradient(radial, 50% 500px, 0, 50% 500px, 400, color-stop(0%, white), color-stop(50%, #eeeeee), color-stop(100%, #cccccc));
+    background-image: -webkit-radial-gradient(center 500px, ellipse closest-side, white, #eeeeee 200px, #cccccc 400px);
+    background-image: -moz-radial-gradient(center 500px, ellipse closest-side, white, #eeeeee 200px, #cccccc 400px);
+    background-image: -o-radial-gradient(center 500px, ellipse closest-side, white, #eeeeee 200px, #cccccc 400px);
+    background-image: -ms-radial-gradient(center 500px, ellipse closest-side, white, #eeeeee 200px, #cccccc 400px);
+    background-image: radial-gradient(center 500px, ellipse closest-side, white, #eeeeee 200px, #cccccc 400px); }
+  #login #login-form {
+    background: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, white, #eeeeee);
+    background-image: -moz-linear-gradient(top, white, #eeeeee);
+    background-image: -o-linear-gradient(top, white, #eeeeee);
+    background-image: linear-gradient(to bottom, white, #eeeeee);
+    border-top-color: #555555; }
+    #login #login-form .text {
+      color: #555555;
+      font-family: Helvetica, Arial, san-serif; }
+  #login #form-errors {
+    font-family: Helvetica, Arial, san-serif;
+    font-style: italic; }
+
+#control-bar {
+  background: #555555;
+  border-bottom-color: #484848; }
+  #control-bar li {
+    border-right-color: #6e6e6e;
+    font-family: Helvetica, Arial, san-serif;
+    font-style: italic; }
+  #control-bar a {
+    color: #eeeeee;
+    text-shadow: 0px 1px 0px #222222; }
+    #control-bar a:hover {
+      background-color: #959595;
+      background-image: -moz-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+      background-image: -webkit-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+      background-image: -o-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+      background-image: -ms-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+      background-image: radial-gradient(center -100%, ellipse cover, #959595, #555555 100%); }
+  #control-bar .icon {
+    font-style: normal;
+    line-height: 36px; }
+
+#status-bar {
+  background: #cccccc;
+  color: #555555; }
+  #status-bar #flash-msg .msg {
+    font-family: Helvetica, Arial, san-serif;
+    font-style: italic; }
+
+.btn {
+  background-color: #959595;
+  background-image: -moz-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+  background-image: -webkit-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+  background-image: -o-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+  background-image: -ms-radial-gradient(center -100%, ellipse cover, #959595, #555555 100%);
+  background-image: radial-gradient(center -100%, ellipse cover, #959595, #555555 100%); }
+  .btn:hover {
+    background-color: #d4d4d4;
+    background-image: -moz-radial-gradient(center -100%, ellipse cover, #d4d4d4, #555555 100%);
+    background-image: -webkit-radial-gradient(center -100%, ellipse cover, #d4d4d4, #555555 100%);
+    background-image: -o-radial-gradient(center -100%, ellipse cover, #d4d4d4, #555555 100%);
+    background-image: -ms-radial-gradient(center -100%, ellipse cover, #d4d4d4, #555555 100%);
+    background-image: radial-gradient(center -100%, ellipse cover, #d4d4d4, #555555 100%); }
+
+.btn-icon .icon {
+  font-style: normal; }
+
+.table-list {
+  border-color: #cccccc; }
+  .table-list th {
+    background-color: white;
+    background-image: -moz-linear-gradient(top, white, #fbfbfb);
+    background-image: -ms-linear-gradient(top, white, #fbfbfb);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(top, white, #fbfbfb);
+    background-image: -o-linear-gradient(top, white, #fbfbfb);
+    background-image: linear-gradient(top, white, #fbfbfb);
+    font-family: Helvetica, Arial, san-serif;
+    font-style: italic; }
+  .table-list td {
+    border-bottom-color: #cccccc; }
+  .table-list .title a {
+    color: #555555;
+    font-family: Helvetica, Arial, san-serif;
+    font-style: italic; }
+  .table-list .page-view a:hover {
+    color: #555555; }
+  .table-list .action a {
+    color: #555555; }
+  .table-list .tablesorter-headerSortUp, .table-list .tablesorter-headerSortDown {
+    background-color: white;
+    background-image: -moz-linear-gradient(top, white, #eeeeee);
+    background-image: -ms-linear-gradient(top, white, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, white, #eeeeee);
+    background-image: -o-linear-gradient(top, white, #eeeeee);
+    background-image: linear-gradient(top, white, #eeeeee); }
+
+.input-block label {
+  color: #555555; }
+.input-block .instructions {
+  font-family: Helvetica, Arial, san-serif;
+  font-style: italic;
+  color: #aaaaaa; }
+  .input-block .instructions:hover {
+    color: #555555; }
+
+#publish-title {
+  font-size: 44px; }
+
+.input-text, .input-date, .input-time {
+  border-bottom: 1px solid white; }
+
+.input-select, .input-status, .input-templates, .input-users span.select {
+  background-color: white; }
+
+.tagsinput span.tag a {
+  font-family: Helvetica, Arial, san-serif; }
+
+.tagsinput input {
+  color: #555555; }
+
+.not_valid {
+  background: #bf1d2d !important; }
+
+.grid thead th {
+  background-color: white;
+  background-image: -moz-linear-gradient(top, white, #eeeeee);
+  background-image: -ms-linear-gradient(top, white, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, white, #eeeeee);
+  background-image: -o-linear-gradient(top, white, #eeeeee);
+  background-image: linear-gradient(top, white, #eeeeee); }
+.grid th.row-count {
+  color: #cccccc;
+  font-family: Helvetica, Arial, san-serif; }
+.grid .drag-indicator:active {
+  background-color: white;
+  background-image: -moz-linear-gradient(top, white, #eeeeee);
+  background-image: -ms-linear-gradient(top, white, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, white, #eeeeee);
+  background-image: -o-linear-gradient(top, white, #eeeeee);
+  background-image: linear-gradient(top, white, #eeeeee); }
+.grid .ui-sortable-helper {
+  border-top-color: #cccccc; }
+.grid .drag-placeholder td {
+  border-color: 1px solid #cccccc; }
+.grid .cell-grid {
+  border-right-color: #cccccc; }
+  .grid .cell-grid thead th {
+    font-family: Helvetica, Arial, san-serif; }
+  .grid .cell-grid .grid-add-row {
+    background-color: white;
+    background-image: -moz-linear-gradient(top, white, #eeeeee);
+    background-image: -ms-linear-gradient(top, white, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, white, #eeeeee);
+    background-image: -o-linear-gradient(top, white, #eeeeee);
+    background-image: linear-gradient(top, white, #eeeeee); }
+    .grid .cell-grid .grid-add-row .icon {
+      color: #aaaaaa; }
+    .grid .cell-grid .grid-add-row:hover {
+      background-color: #f2f2f2;
+      background-image: -moz-linear-gradient(top, #f2f2f2, #e1e1e1);
+      background-image: -ms-linear-gradient(top, #f2f2f2, #e1e1e1);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#e1e1e1));
+      background-image: -webkit-linear-gradient(top, #f2f2f2, #e1e1e1);
+      background-image: -o-linear-gradient(top, #f2f2f2, #e1e1e1);
+      background-image: linear-gradient(top, #f2f2f2, #e1e1e1); }
+      .grid .cell-grid .grid-add-row:hover .icon {
+        color: #555555; }
+
+#page-tree {
+  font-family: Helvetica, Arial, san-serif;
+  font-size: 18px;
+  font-style: italic; }
+  #page-tree .page-wrapper {
+    background-color: white;
+    background-image: -moz-linear-gradient(top, white, #fbfbfb);
+    background-image: -ms-linear-gradient(top, white, #fbfbfb);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#fbfbfb));
+    background-image: -webkit-linear-gradient(top, white, #fbfbfb);
+    background-image: -o-linear-gradient(top, white, #fbfbfb);
+    background-image: linear-gradient(top, white, #fbfbfb);
+    border-color: #cccccc;
+    border-bottom-color: #aaaaaa; }
+  #page-tree ul.subpages .page-wrapper {
+    background-color: white;
+    background-image: -moz-linear-gradient(top, white, #eeeeee);
+    background-image: -ms-linear-gradient(top, white, #eeeeee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#eeeeee));
+    background-image: -webkit-linear-gradient(top, white, #eeeeee);
+    background-image: -o-linear-gradient(top, white, #eeeeee);
+    background-image: linear-gradient(top, white, #eeeeee); }
+  #page-tree .page-title {
+    color: #555555; }
+  #page-tree .control-entries a {
+    color: #555555; }
+  #page-tree .control-entries em {
+    color: #959595; }
+  #page-tree .page-view a:hover, #page-tree .page-add a:hover {
+    background-color: #eeeeee;
+    background-image: -moz-linear-gradient(top, #eeeeee, white);
+    background-image: -ms-linear-gradient(top, #eeeeee, white);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(white));
+    background-image: -webkit-linear-gradient(top, #eeeeee, white);
+    background-image: -o-linear-gradient(top, #eeeeee, white);
+    background-image: linear-gradient(top, #eeeeee, white);
+    color: #555555; }
+
+.page-view, .page-add .icon {
+  font-style: normal; }
+
+.panel {
+  border-top-color: #555555; }
+  .panel ul a, .panel p a:hover {
+    color: #555555; }
+
+#fieldset-modal .modal-header {
+  background: #fbfbfb; }
+#fieldset-modal .modal-footer {
+  color: #555555; }
+#fieldset-modal ul a {
+  color: #555555; }
+
+.topo {
+  background: #fbfbfb; }
+
+#footer {
+  background: #555555;
+  font-size: 12px;
+  font-family: Helvetica, Arial, san-serif;
+  font-style: italic; }
+  #footer a {
+    font-size: 13px; }
+
+.modal-backdrop {
+  background: #555555; }
+
+.pages-dropdown-menu a:hover {
+  background: #555555; }
+
+.iphone {
+  display: none; }
+
+@media only screen and (max-width: 865px) {
+  #control-bar {
+    min-width: 0; }
+    #control-bar .icon {
+      display: none; }
+    #control-bar ul {
+      width: 100%; }
+    #control-bar a {
+      padding: 12px 0 10px; } }
+@media screen and (max-width: 480px) {
+  .web {
+    display: none; }
+
+  .iphone, .hover {
+    display: inline-block; }
+
+  #control-bar {
+    min-width: 0; }
+    #control-bar .icon {
+      display: block;
+      margin: 0;
+      font-size: 52px; }
+    #control-bar .title {
+      display: none; }
+    #control-bar ul {
+      width: 100%; }
+    #control-bar a {
+      padding: 0 0 15px; }
+
+  #screen {
+    padding: 25px 10px; }
+
+  #status-bar {
+    padding: 0 10px; }
+
+  .btn {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center; }
+
+  #publish-title {
+    padding: .5em 10px;
+    font-size: 24px; }
+
+  .table-list th {
+    font-size: 16px;
+    padding: 5px; }
+  .table-list td {
+    font-size: 12px;
+    padding: 5px;
+    line-height: 16px;
+    vertical-align: middle; }
+  .table-list .title a {
+    font-size: 16px;
+    line-height: 16px; }
+  .table-list .action {
+    padding: 5px; }
+    .table-list .action .icon {
+      margin-right: 0; }
+
+  .panel {
+    margin: 0 0 50px; }
+
+  #page-tree ul {
+    padding-left: 25px;
+    background: url("../img/page-v-line.png") 25px 0 repeat-y; }
+    #page-tree ul .page-wrapper .page-title {
+      max-width: 135px; }
+  #page-tree .page-primary {
+    float: left; }
+  #page-tree .page-wrapper {
+    text-indent: 0px; }
+    #page-tree .page-wrapper .icon {
+      margin-right: 3px; }
+    #page-tree .page-wrapper .page-title {
+      display: inline-block;
+      float: left;
+      max-width: 160px;
+      max-height: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0px 8px; }
+    #page-tree .page-wrapper .control-entries {
+      margin-left: 5px; }
+      #page-tree .page-wrapper .control-entries a {
+        color: #555555;
+        font-size: 15px; }
+        #page-tree .page-wrapper .control-entries a:hover {
+          color: #bf1d2d; }
+      #page-tree .page-wrapper .control-entries em {
+        color: #959595;
+        font-size: 14px; }
+    #page-tree .page-wrapper .slug-preview {
+      display: none; }
+
+  #login {
+    background: #eeeeee;
+    width: 100%!important;
+    height: 360px;
+    -webkit-text-size-adjust: none; }
+    #login #login-wrapper {
+      background: none;
+      display: block;
+      min-height: 360px;
+      width: 100%!important;
+      padding: 0;
+      text-align: center; }
+      #login #login-wrapper img {
+        width: 290px;
+        height: auto; }
+      #login #login-wrapper input {
+        width: 100%; }
+    #login #login-form {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      background: none;
+      border-top: 12px solid #555555;
+      box-shadow: none;
+      left: auto;
+      top: 0;
+      margin: 0;
+      padding: 25px 0 0 0;
+      width: 100%;
+      height: auto; }
+      #login #login-form form {
+        margin-top: 15px;
+        padding: 15px; }
+      #login #login-form .text {
+        background: white;
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        color: #555555;
+        font-family: sans-serif;
+        line-height: 22px;
+        text-indent: 10px;
+        padding: 10px 0;
+        font-size: 18px;
+        font-style: italic;
+        width: 100%; }
+      #login #login-form .login-row {
+        display: block;
+        margin-bottom: 25px;
+        border: none;
+        width: 100%; } }

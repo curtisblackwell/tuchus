@@ -1,0 +1,257 @@
+///////////////////////////////////////////
+//                                       //
+//  Tuchus - Trailhead Override          //
+//  by Curtis Blackwell                  //
+//  Version 1.1                          //
+//                                       //
+///////////////////////////////////////////
+
+///////////////////
+// Imports
+///////////////////
+
+@import 'mixins';
+
+///////////////////
+// Color Variables
+///////////////////
+$grey_dark:       #555;
+$grey:            #aaa;
+$grey_light:      #ccc;
+$white_not_quite: #eee;
+$white:           #fff;
+
+$olive:           $grey_dark;
+$red:             #bf1d2d;
+
+///////////////////
+// Color Variables
+///////////////////
+
+$font_stack: Helvetica, Arial, san-serif;
+
+body {
+  background: $white_not_quite;
+  font-family: $font_stack;
+}
+
+input, em, .btn {
+  font-family: $font_stack;
+  font-style: italic;
+}
+
+textarea {font-family: $font_stack;}
+
+///////////////////
+// PAGE: LOGIN
+///////////////////
+
+#login {
+  background: $grey_light;
+
+  #login-wrapper {
+    background-image: -webkit-gradient(radial,50% 500px,0,50% 500px,400,color-stop(0%,$white),color-stop(50%,$white_not_quite),color-stop(100%,$grey_light));
+    background-image: -webkit-radial-gradient(center 500px,ellipse closest-side,$white,$white_not_quite 200px,$grey_light 400px);
+    background-image: -moz-radial-gradient(   center 500px,ellipse closest-side,$white,$white_not_quite 200px,$grey_light 400px);
+    background-image: -o-radial-gradient(     center 500px,ellipse closest-side,$white,$white_not_quite 200px,$grey_light 400px);
+    background-image: -ms-radial-gradient(    center 500px,ellipse closest-side,$white,$white_not_quite 200px,$grey_light 400px);
+    background-image: radial-gradient(        center 500px,ellipse closest-side,$white,$white_not_quite 200px,$grey_light 400px);
+  }
+
+  #login-form {
+    background: $white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($white), to($white_not_quite));
+    background-image: -webkit-linear-gradient(top, $white, $white_not_quite);
+    background-image: -moz-linear-gradient(   top, $white, $white_not_quite);
+    background-image: -o-linear-gradient(     top, $white, $white_not_quite);
+    background-image: linear-gradient(  to bottom, $white, $white_not_quite);
+    border-top-color: $grey_dark;
+
+    .text {
+      color: $grey_dark;
+      font-family: $font_stack;
+    }
+  }
+
+  #form-errors {
+    font-family: $font_stack;
+    font-style: italic;
+  }
+}
+
+#control-bar {
+  background: $grey_dark;
+  border-bottom-color: darken($grey_dark, 5%);
+
+  li {
+    border-right-color: lighten($grey_dark, 10%);
+    font-family: $font_stack;
+    font-style: italic;
+  }
+
+  a {
+    color: $white_not_quite;
+    text-shadow: 0px 1px 0px darken($grey_dark, 20%);
+    &:hover { @include radial($grey_dark, lighten($grey_dark, 25%)); }
+  }
+  .icon {
+    font-style: normal;
+    line-height:36px;
+  }
+}
+
+#status-bar {
+  background: $grey_light;
+  color: $grey_dark;
+
+  #flash-msg {
+    .msg {
+      font-family: $font_stack;
+      font-style: italic;
+    }
+  }
+}
+
+.btn {
+  @include radial($grey_dark, lighten($grey_dark, 25%));
+
+  &:hover { @include radial($grey_dark, lighten($grey_dark, 50%)); }
+}
+.btn-icon .icon { font-style: normal; }
+
+.table-list {
+  border-color: $grey_light;
+
+  th {
+    @include gradient($white, lighten($white_not_quite, 5%));
+    font-family: $font_stack;
+    font-style: italic;
+  }
+
+  td { border-bottom-color: $grey_light; }
+
+  .title a {
+    color: $grey_dark;
+    font-family: $font_stack;
+    font-style: italic;
+  }
+
+  .page-view a:hover { color: $grey_dark; }
+  .action a { color: $grey_dark; }
+
+  .tablesorter-headerSortUp, .tablesorter-headerSortDown { @include gradient($white, $white_not_quite); }
+}
+
+.input-block {
+  label { color: $grey_dark; }
+
+  .instructions {
+    font-family: $font_stack;
+    font-style: italic;
+    color: $grey;
+
+    &:hover {color: $grey_dark;}
+  }
+}
+
+#publish-title { font-size:44px; }
+
+.input-text, .input-date, .input-time { border-bottom: 1px solid $white; }
+
+.input-select, .input-status, .input-templates, .input-users span.select { background-color: $white; }
+
+.tagsinput span.tag a { font-family: $font_stack; }
+
+.tagsinput input { color: $grey_dark; }
+.not_valid { background: $red !important; }
+
+// THE ALMIGHTY GRID
+.grid {
+  thead th { @include gradient($white, $white_not_quite); }
+
+  th.row-count {
+    color: $grey_light;
+    font-family: $font_stack;
+  }
+
+  .drag-indicator:active { @include gradient($white, $white_not_quite); }
+  .ui-sortable-helper { border-top-color: $grey_light; }
+  .drag-placeholder td { border-color:1px solid $grey_light; }
+
+  .cell-grid {
+    border-right-color: $grey_light;
+    thead th { font-family: $font_stack; }
+    .grid-add-row {
+      @include gradient($white, $white_not_quite);
+
+      .icon { color: $grey; }
+
+      &:hover {
+        @include gradient(darken($white, 5%), darken($white_not_quite, 5%));
+
+        .icon {color: $grey_dark;}
+      }
+    }
+  }
+}
+
+#page-tree {
+  font-family:$font_stack;
+  font-size: 18px;
+  font-style: italic;
+
+  .page-wrapper {
+    @include gradient($white, lighten($white_not_quite, 5%));
+    border-color: $grey_light;
+    border-bottom-color: $grey;
+  }
+
+  ul.subpages .page-wrapper { @include gradient($white, $white_not_quite); }
+  .page-title { color: $grey_dark; }
+
+  .control-entries {
+    a { color: $grey_dark; }
+
+    em { color: lighten($grey_dark, 25%); }
+  }
+
+  .page-view a, .page-add a {
+    &:hover {
+      @include gradient($white_not_quite, $white);
+      color:$grey_dark;
+    }
+  }
+}
+
+.page-view, .page-add .icon { font-style: normal; }
+
+.panel {
+  border-top-color: $grey_dark;
+
+  ul a, p a:hover {color: $grey_dark; }
+}
+
+
+#fieldset-modal {
+  .modal-header { background: lighten($white_not_quite, 5%); }
+  .modal-footer { color: $grey_dark; }
+
+  ul a { color: $grey_dark; }
+}
+
+.topo { background: lighten($white_not_quite, 5%); }
+
+#footer {
+  background: $grey_dark;
+  font-size:12px;
+  font-family: $font_stack;
+  font-style: italic;
+
+  a { font-size: 13px; }
+}
+
+.modal-backdrop{ background: $grey_dark; }
+
+.pages-dropdown-menu a:hover { background: $grey_dark; }
+
+@import 'responsive';
